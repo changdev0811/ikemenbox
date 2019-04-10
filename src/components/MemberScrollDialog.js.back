@@ -1,0 +1,70 @@
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import { SocialIcon } from 'react-social-icons';
+
+import MemberCarousel from "./MemberCarousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+class MemberScrollDialog extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      open: false,
+      scroll: 'paper',
+    };
+
+    console.log("this.props in MemberList: ", this.props );
+
+  }
+
+
+  handleClickOpen = scroll => () => {
+    this.setState({ open: true, scroll });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+
+    console.log("this.props.name in MemberScrollDialog: ", this.props.props.name);
+
+    return (
+      <div>
+        {/*<Button onClick={this.handleClickOpen('paper')}>scroll=paper</Button>*/}
+        <center>
+          <Button onClick={this.handleClickOpen('body')} style={{ textTransform: 'none' , fontSize: 'medium' }}>{this.props.props.name}</Button>
+        </center>
+        <Dialog
+          open={this.state.open}
+          onClose={this.handleClose}
+          scroll={this.state.scroll}
+          aria-labelledby="scroll-dialog-title"
+        >
+          <DialogTitle id="scroll-dialog-title">{this.props.props.name}</DialogTitle>
+          <DialogContent>
+            <MemberCarousel props={this.props.props}/>
+            <DialogContentText>
+              {this.props.props.profile}
+            </DialogContentText>
+            <SocialIcon url={this.props.props.twitter} network="twitter" style={{ height: 50, width: 50 }} />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.handleClose} color="primary">
+              Cancel
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </div>
+    );
+  }
+}
+
+export default MemberScrollDialog;

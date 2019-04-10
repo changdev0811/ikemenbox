@@ -1,0 +1,10 @@
+
+index.htmlの<body class="mainColorGreen">の「mainColorGreen」部分を以下に変更する事で全体の色を変更可能。
+
+mainColorGreen（緑）
+mainColorYellow（黄色）
+mainColorSkyblue（スカイブルー）
+mainColorPurple（紫）
+mainColorRed（赤）
+mainColorOrange（オレンジ色）
+mainColorBlue（青）

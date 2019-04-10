@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+
+/* --------------------------------------------------
+box
+-------------------------------------------------- */
+/* contents box --------------- */
+.contentsBlock{
+box-sizing:border-box;
+position:relative;
+width:100%;
+padding-bottom: 12%;
+}
+
+.contentsFloatingBox{
+box-sizing:border-box;
+position:relative;
+width:94%;
+max-width:1000px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -100px;
+padding-top: 100px;
+}
+
+@media screen and (max-width: 750px) {
+	.contentsBlock{
+	padding-bottom: 18%;
+	}
+
+	.contentsFloatingBox{
+	margin-top: -56px;
+	padding-top: 56px;
+	}
+}
+
+
+/* --------------------------------------------------
+title
+-------------------------------------------------- */
+/* ttlComm --------------- */
+.ttlComm{
+font-size: 300%;
+margin: 0 0 3%;
+}
+
+.ttlComm.minor{
+font-size: 200%;
+}
+
+@media screen and (max-width: 750px) {
+	.ttlComm{
+	font-size: 6.5vw;
+	}
+
+	.ttlComm.minor{
+	font-size: 5.2vw;
+	}
+}
+
+
+/* --------------------------------------------------
+table
+-------------------------------------------------- */
+/*  --------------- */
+
+
+/* --------------------------------------------------
+list
+-------------------------------------------------- */
+/* listNews --------------- */
+.listNews > li{
+margin: 0 0 3%;
+padding: 0 0 2%;
+}
+
+body.mainColorGreen .listNews > li{
+border-bottom: #009944 solid 1px;
+}
+
+body.mainColorYellow .listNews > li{
+border-bottom: #dfd000 solid 1px;
+}
+
+body.mainColorSkyblue .listNews > li{
+border-bottom: #2fbdf0 solid 1px;
+}
+
+body.mainColorPurple .listNews > li{
+border-bottom: #8457a1 solid 1px;
+}
+
+body.mainColorRed .listNews > li{
+border-bottom: #e60012 solid 1px;
+}
+
+body.mainColorOrange .listNews > li{
+border-bottom: #ee7800 solid 1px;
+}
+
+body.mainColorBlue .listNews > li{
+border-bottom: #0063b2 solid 1px;
+}
+
+.listNews > li .date{
+margin: 0 0 1%;
+font-size: 110%;
+}
+
+.listNews > li .date span{
+margin: 0 0 0 2%;
+padding: 3px 1%;
+color: #fff;
+text-align: center;
+font-size: 70%;
+}
+
+body.mainColorGreen .listNews > li .date span{
+background-color:#009944;
+}
+
+body.mainColorYellow .listNews > li .date span{
+background-color:#dfd000;
+}
+
+body.mainColorSkyblue .listNews > li .date span{
+background-color:#2fbdf0;
+}
+
+body.mainColorPurple .listNews > li .date span{
+background-color:#8457a1;
+}
+
+body.mainColorRed .listNews > li .date span{
+background-color:#e60012;
+}
+
+body.mainColorOrange .listNews > li .date span{
+background-color:#ee7800;
+}
+
+body.mainColorBlue .listNews > li .date span{
+background-color:#0063b2;
+}
+
+@media screen and (max-width: 750px) {
+	.listNews > li{
+	margin: 0 0 8%;
+	padding: 0 0 7%;
+	}
+}
+
+
+/* --------------------------------------------------
+button
+-------------------------------------------------- */
+/* btnComm --------------- */
+.btnComm a{
+display: block;
+text-decoration: none;
+box-sizing: border-box;
+width: 100%;
+max-width: 500px;
+padding: 20px 3% 20px;
+margin: 5% auto 5%;
+text-align: center;
+color: #fff;
+font-size: 130%;
+line-height: 1.5;
+transition:all 0.1s ease;
+}
+
+.btnComm.small a{
+max-width: 200px;
+padding: 10px 3% 10px;
+font-size: 110%;
+}
+
+.btnComm.big a{
+max-width: 700px;
+padding: 30px 3% 30px;
+font-size: 200%;
+}
+
+.btnComm a:hover{
+opacity: 0.5;
+}
+
+body.mainColorGreen .btnComm a{
+background-color: #009944;
+}
+
+body.mainColorYellow .btnComm a{
+background-color:#dfd000;
+}
+
+body.mainColorSkyblue .btnComm a{
+background-color:#2fbdf0;
+}
+
+body.mainColorPurple .btnComm a{
+background-color:#8457a1;
+}
+
+body.mainColorRed .btnComm a{
+background-color:#e60012;
+}
+
+body.mainColorOrange .btnComm a{
+background-color:#ee7800;
+}
+
+body.mainColorBlue .btnComm a{
+background-color:#0063b2;
+}
+
+@media screen and (max-width: 750px) {
+	.btnComm a{
+	font-size: 120%;
+	padding: 12px 3% 12px;
+	}
+
+	.btnComm.small a{
+	padding: 7px 3% 7px;
+	}
+
+	.btnComm.big a{
+	font-size: 150%;
+	padding: 20px 3% 20px;
+	}
+}
+
+
+/* --------------------------------------------------
+text
+-------------------------------------------------- */
+.txtMincho{
+font-family:"Times New Roman","游明朝", YuMincho,"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","メイリオ",Meiryo,serif;
+font-weight:300;
+}
+
+.txtGothic{
+font-family:"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN",Futura,Verdana,Roboto,"Droid Sans","游ゴシック",YuGothic,"メイリオ",Meiryo, sans-serif;
+font-weight:400;
+}
+
+.txtUnderline{
+text-decoration:underline;
+}
+
+.txtBig{
+font-size:115%;
+}
+
+.txtSmall{
+font-size:85%;
+}
+
+.txtWeight{
+font-weight:bold;
+}
+
+.txtBlack{
+color:#000;
+}
+
+.txtRed{
+color:#e60000;
+}
+
+.txtError{
+color:#f00;
+}
+
+@media screen and (min-width: 750px) {
+	.br-pc{display:block;}
+	.br-sp{display:none;}
+}
+
+@media screen and (max-width: 750px) {
+	.br-pc{display:none;}
+	.br-sp{display:block;}
+}
+
+
+/* --------------------------------------------------
+other classes
+-------------------------------------------------- */
+/* Clear fix --------------- */
+.clearFix:after{
+content:"";
+clear:both;
+display:block;
+}
+
+
+/* Hide --------------- */
+.disnon{
+display:none;
+}
+
+
+/* Form required --------------- */
+.required,
+.nRequired{
+background-color:#f02323;
+color:#fff;
+display:inline-block;
+font-weight:normal;
+font-size:12px;
+margin:0 5px;
+padding:0;
+text-align:center;
+line-height:22px;
+width:40px;
+}
+
+.nRequired{
+background-color:#999;
+}
+
+.required.right,
+.nRequired.right{
+margin-top:5px;
+float:right;
+}
+
+
+/* Focus Animation --------------- */
+.focusAnimation{
+border:1px solid #aaa;
+transition:all 0.3s ease-in-out 0s;
+}
+
+.focusAnimation:focus{
+border:1px solid #39c;
+box-shadow:0 0 5px #39c;
+outline:medium none;
+transition:all 0.3s ease-in-out 0s;
+}
+
+
+/* zoom icon --------------- */
+.icnZoomArea{
+position:relative;
+}
+
+.icnZoomArea .icnZoom{
+position:absolute;
+bottom:0;
+right:0;
+background:url(../img/common/icon_zoom.png) 50% 50% no-repeat rgba(0,0,0,0.7);
+width:35px;
+height:35px;
+}
+
+
+/* imgCircle --------------- */
+.imgCircle{
+border-radius:999px;
+}
+
+
+/* arrow --------------- */
+.arrowPrev,
+.arrowNext{
+position: absolute;
+top: calc(50% - 8px);
+display: block;
+width: 15px;
+height: 15px;
+border-top: solid 3px #999;
+border-right: solid 3px #999;
+cursor: pointer;
+transition:all 0.1s ease;
+}
+
+.arrowPrev:hover,
+.arrowNext:hover{
+opacity: 0.3;
+}
+
+.arrowPrev{
+left: -7%;
+-webkit-transform: rotate(225deg);
+transform: rotate(225deg);
+}
+
+.arrowNext{
+right: -7%;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+body.mainColorGreen .arrowPrev,
+body.mainColorGreen .arrowNext{
+border-top-color: #009944;
+border-right-color: #009944;
+}
+
+body.mainColorYellow .arrowPrev,
+body.mainColorYellow .arrowNext{
+border-top-color: #dfd000;
+border-right-color: #dfd000;
+}
+
+body.mainColorSkyblue .arrowPrev,
+body.mainColorSkyblue .arrowNext{
+border-top-color: #2fbdf0;
+border-right-color: #2fbdf0;
+}
+
+body.mainColorPurple .arrowPrev,
+body.mainColorPurple .arrowNext{
+border-top-color: #8457a1;
+border-right-color: #8457a1;
+}
+
+body.mainColorRed .arrowPrev,
+body.mainColorRed .arrowNext{
+border-top-color: #e60012;
+border-right-color: #e60012;
+}
+
+body.mainColorOrange .arrowPrev,
+body.mainColorOrange .arrowNext{
+border-top-color: #ee7800;
+border-right-color: #ee7800;
+}
+
+body.mainColorBlue .arrowPrev,
+body.mainColorBlue .arrowNext{
+border-top-color: #0063b2;
+border-right-color: #0063b2;
+}
+
+@media screen and (max-width: 500px) {
+	.arrowPrev{
+	left: -5%;
+	}
+
+	.arrowNext{
+	right: -5%;
+	}
+}

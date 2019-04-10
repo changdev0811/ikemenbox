@@ -1,0 +1,3 @@
+default export const data = {
+
+}

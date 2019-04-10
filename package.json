@@ -1,0 +1,38 @@
+{
+  "name": "ikemen",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.6.1",
+    "@material-ui/icons": "^3.0.1",
+    "mdbreact": "^4.8.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-grid-gallery": "^0.5.3",
+    "react-helmet": "^5.2.0",
+    "react-iframe": "^1.3.3",
+    "react-infinite-scroller": "^1.2.4",
+    "react-responsive-carousel": "^3.1.43",
+    "react-scripts": "^2.1.3",
+    "react-share": "^2.4.0",
+    "tabletop": "^1.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "react-social-icons": "^3.0.0"
+  }
+}

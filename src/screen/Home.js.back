@@ -1,0 +1,77 @@
+import React, { Component } from 'react';
+import Tabletop from 'tabletop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
+import ScrollableTabsButtonAuto from '../components/ScrollableTabsButtonAuto.js';
+import ButtonAppBar from '../components/ButtonAppBar.js';
+import Album from '../components/Album.js';
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
+
+import Carousel from "../components/Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import GroupGrid from "./GroupGrid";
+
+
+class Home extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      data: [],
+      anchorEl: null
+    }
+
+  }
+
+  handleClick = event => {
+    this.setState({ anchorEl: event.currentTarget });
+  };
+
+  handleClose = () => {
+    this.setState({ anchorEl: null });
+  };
+
+  componentDidMount() {
+    Tabletop.init({
+      key: '1pgMF2JtQ0vrUSPoIBeLaNESF3Y2w8SqZX6tTrRq1-ys',
+      callback: googleData => {
+        this.setState({
+          data: googleData
+        })
+      },
+      simpleSheet: false
+    });
+
+    this.setState({ anchorEl: null });
+
+  }
+
+  componentDidUpdate(){
+
+  }
+
+  render() {
+
+    if(this.state.data.length != 0 ){
+
+      return (
+          <div>
+          </div>
+      );
+
+    }
+    else{
+      return (
+        <div>
+          <center><CircularProgress/></center>
+        </div>
+      );
+    }
+
+  }
+}
+
+export default Home;

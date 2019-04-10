@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="./img/common/favicon.ico">
+<link rel="apple-touch-icon" href="./img/common/touch_icon.png">
+<link rel="stylesheet" href="./css/reset-min.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/index.css">
+<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/common.js"></script>
+<link rel="stylesheet" href="./js/slick/slick.css">
+<link rel="stylesheet" href="./js/slick/slick-theme.css">
+<script src="./js/slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('#blc01 .slide').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    arrows: false,
+    touchMove: false,
+    pauseOnHover: true,
+    pauseOnFocus: true
+  });
+  $('#blc04 .slide,#blc05 .slide').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    arrows: true,
+    prevArrow:'<div class="arrowPrev"></div>',
+    nextArrow:'<div class="arrowNext"></div>',
+    touchMove: false
+  });
+  $('#blc06 .slide').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    speed: 1000,
+    arrows: true,
+    prevArrow:'<div class="arrowPrev"></div>',
+    nextArrow:'<div class="arrowNext"></div>',
+    touchMove: false
+  });
+});
+</script>
+<script src="./js/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('#blc02 .bxslider').bxSlider({
+    mode:'fade',
+    speed: 1000,
+    pause:  5000,
+    auto: true,
+    pager: false,
+    controls: false
+  });
+});
+</script>
+</head>
+<body class="mainColorGreen">
+<header id="header">
+  <div class="inner clearFix"><!--inner-->
+    <div id="headerMobile"><!--headerMobile-->
+      <h1 class="logo"><a href="./"><img src="./img/common/logo.png" alt="Logo"></a></h1>
+      <div id="navToggle"><!--navToggle-->
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div><!--/navToggle-->
+      <nav id="snsNav"><!--snsNav-->
+        <ul class="clearFix">
+          <li><a href="#"><img src="./img/common/icon_youtube.png" alt="Youtube"></a></li>
+          <li><a href="#"><img src="./img/common/icon_instagram.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="./img/common/icon_twitter.png" alt="Twitter"></a></li>
+        </ul>
+      </nav><!--/snsNav-->
+    </div><!--/headerMobile-->
+    <nav id="globalNav"><!--globalNav-->
+      <ul class="clearFix">
+        <li><a href="#blc01">MY IKEMEN</a></li>
+        <li><a href="#blc02">ANNIVERSARY</a></li>
+        <li><a href="#blc03">NEWS</a></li>
+        <li><a href="#blc04">MOVIES</a></li>
+        <li><a href="#blc05">LIVE</a></li><br class="br-pc">
+        <li><a href="#blc06">IKEMEN BOX</a></li>
+        <li><a href="#blc07">ACCESS</a></li>
+        <li><a href="#blc08">IKEMEN COLLECTION</a></li>
+        <li><a href="#">CUSTOMIZE</a></li>
+      </ul>
+    </nav><!--/globalNav-->
+  </div><!--/inner-->
+</header>
+
+<div id="contents"><!--contents-->
+  <div id="blc01"><!--blc01-->
+    <div class="keyVisual"><!-- keyVisual -->
+      <div class="slide"><!--slide-->
+        <div class="box"><!--box-->
+          <img src="./img/top/blc01_key_visual01.jpg" alt="">
+        </div><!--/box-->
+        <div class="box"><!--box-->
+          <img src="./img/top/blc01_key_visual01.jpg" alt="">
+        </div><!--/box-->
+      </div><!--/slide-->
+    </div><!-- /keyVisual -->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <h1 class="ttlComm">MORI HAYATO</h1>
+      <ul class="listNews">
+        <li>
+          <div class="date">
+            2019.01.01
+            <span class="state">STAGE</span>
+            <span class="state">NEW</span>
+          </div>
+          <div class="txt">
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+          </div>
+        </li>
+      </ul>
+      <section class="innerSection">
+        <div class="box">
+          <h1 class="ttlComm minor">OSHINO JYOUHOU</h1>
+          <select>
+            <option value="" selected="selected">CATEGORY</option>
+            <option value="CATEGORY1">CATEGORY1</option>
+            <option value="CATEGORY2">CATEGORY2</option>
+          </select>
+        </div>
+        <ul class="listNews">
+          <li>
+            <div class="date">
+              2019.01.01
+              <span class="state">STAGE</span>
+              <span class="state">NEW</span>
+            </div>
+            <div class="txt">
+              サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+            </div>
+          </li>
+          <li>
+            <div class="date">
+              2019.01.01
+              <span class="state">STAGE</span>
+              <span class="state">NEW</span>
+            </div>
+            <div class="txt">
+              サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+            </div>
+          </li>
+        </ul>
+        <div class="btnComm small"><a href="#">MORE</a></div>
+      </section>
+    </section>
+  </div><!--/blc01-->
+
+  <div id="blc02"><!--blc02-->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <h1 class="ttlComm">ANNIVERSARY</h1>
+      <div class="blcBxslider"><!--blcBxslider-->
+        <ul class="list clearFix"><!--list-->
+          <li>
+            <div class="balloon">12/30</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img01.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img01.jpg);"></span></li>
+            </ul>
+            <div class="name green">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">1/1</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img02.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img02.jpg);"></span></li>
+            </ul>
+            <div class="name yellow">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">1/1</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img03.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img03.jpg);"></span></li>
+            </ul>
+            <div class="name skyblue">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">12/30</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img04.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img04.jpg);"></span></li>
+            </ul>
+            <div class="name purple">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">1/1</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img05.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img05.jpg);"></span></li>
+            </ul>
+            <div class="name red">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">1/1</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img06.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img06.jpg);"></span></li>
+            </ul>
+            <div class="name orange">名字　名前</div>
+          </li>
+          <li>
+            <div class="balloon">1/1</div>
+            <ul class="bxslider">
+              <li><span style="background-image: url(./img/top/blc02_img07.jpg);"></span></li>
+              <li><span style="background-image: url(./img/top/blc02_img07.jpg);"></span></li>
+            </ul>
+            <div class="name blue">名字　名前</div>
+          </li>
+        </ul><!--/list-->
+      </div><!--/blcBxslider-->
+      <div class="btnComm big"><a href="#">ANNIVERSARY MEMORIES</a></div>
+    </section>
+  </div><!--/blc02-->
+
+  <div id="blc03"><!--blc03-->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <div class="box">
+        <h1 class="ttlComm">NEWS</h1>
+        <select>
+          <option value="" selected="selected">CATEGORY</option>
+          <option value="CATEGORY1">CATEGORY1</option>
+          <option value="CATEGORY2">CATEGORY2</option>
+        </select>
+      </div>
+      <ul class="listNews">
+        <li>
+          <div class="date">
+            2019.01.01
+            <span class="state">STAGE</span>
+            <span class="state">NEW</span>
+          </div>
+          <div class="txt">
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+          </div>
+        </li>
+        <li>
+          <div class="date">
+            2019.01.01
+            <span class="state">STAGE</span>
+            <span class="state">NEW</span>
+          </div>
+          <div class="txt">
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+          </div>
+        </li>
+      </ul>
+      <div class="btnComm small"><a href="#">MORE</a></div>
+      <div class="btn">
+        <div class="btnComm"><a href="#">GRUP CALENDER</a></div>
+        <div class="btnComm"><a href="#">IKEMEN SNS</a></div>
+      </div>
+    </section>
+  </div><!--/blc03-->
+
+  <div class="contentsBlock contentsFloatingBox clearFix movieBlcWrap"><!--/movieBlcWrap-->
+    <div id="blc04"><!--blc04-->
+      <section class="contentsBlock contentsFloatingBox clearFix">
+        <h1 class="ttlComm">MOVIES</h1>
+        <div class="boxSlide"><!-- boxSlide -->
+          <div class="slide"><!--slide-->
+            <div class="box"><!--box-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/vRIHx3XpdXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--/box-->
+            <div class="box"><!--box-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/vRIHx3XpdXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--/box-->
+          </div><!--/slide-->
+        </div><!-- /boxSlide -->
+      </section>
+    </div><!--/blc04-->
+
+    <div id="blc05"><!--blc05-->
+      <section class="contentsBlock contentsFloatingBox clearFix">
+        <h1 class="ttlComm">LIVE</h1>
+        <div class="boxSlide"><!-- boxSlide -->
+          <div class="slide"><!--slide-->
+            <div class="box"><!--box-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/vRIHx3XpdXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--/box-->
+            <div class="box"><!--box-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/vRIHx3XpdXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--/box-->
+          </div><!--/slide-->
+        </div><!-- /boxSlide -->
+      </section>
+    </div><!--/blc05-->
+
+    <nav class="link">
+      <div><a href="#"><img src="./img/common/icon_youtube2.png" alt="Youtube"></a></div>
+      <div><a href="#"><img src="./img/common/icon_mashebara.png" alt="マシェバラ"></a></div>
+      <div><a href="#"><img src="./img/common/icon_mysta.png" alt="mysta"></a></div>
+    </nav>
+  </div><!--/movieBlcWrap-->
+
+  <div id="blc06"><!--blc06-->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <h1 class="ttlComm">IKEMEN BOX</h1>
+      <article class="intro">
+        BACS所属アイドルが中心となって、<br class="br-pc">様々なカタチで毎日ライブ・配信・トークショー他を発信していきます！<br class="br-pc">会える以外にも、話せる・買える・視聴 出来る他<br class="br-pc">様々なイケメン体験が出来るイケメンプロジェクトビルです！
+      </article>
+      <figure class="inner"><!-- inner -->
+        <figcaption>
+          <div class="heading">1F</div>
+          <div class="detail">
+            <div class="ttl">LIVEステージ</div>
+            <div class="txt">毎日18時半より、BACS所属のアイドルグループが定期公演を実施</div>
+          </div>
+        </figcaption>
+        <div class="boxSlide"><!-- boxSlide -->
+          <div class="slide"><!--slide-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img01.jpg" alt="">
+            </div><!--/box-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img01.jpg" alt="">
+            </div><!--/box-->
+          </div><!--/slide-->
+        </div><!-- /boxSlide -->
+      </figure><!-- /inner -->
+      <figure class="inner"><!-- inner -->
+        <figcaption>
+          <div class="heading">2F</div>
+          <div class="detail">
+            <div class="ttl">配信スタジオ・カフェ・ステージ</div>
+            <div class="txt">配信用の公開スタジオを設け、生配信・公開収録を実施!<br class="br-pc">イケメンが1日店長を務めるカフェでは、アイドルコラボメニューを提供します！</div>
+          </div>
+        </figcaption>
+        <div class="boxSlide"><!-- boxSlide -->
+          <div class="slide"><!--slide-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img02.jpg" alt="">
+            </div><!--/box-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img02.jpg" alt="">
+            </div><!--/box-->
+          </div><!--/slide-->
+        </div><!-- /boxSlide -->
+      </figure><!-- /inner -->
+      <figure class="inner"><!-- inner -->
+        <figcaption>
+          <div class="heading">3F</div>
+          <div class="detail">
+            <div class="ttl">カフェ・VR・ドレスルーム</div>
+            <div class="txt">コラボカフェや、イケメンをより近くで感じられる VRコンテンツを展開！<br class="br-pc">ネイルとマツエクができるチェアやメイクカウンターも完備！</div>
+          </div>
+        </figcaption>
+        <div class="boxSlide"><!-- boxSlide -->
+          <div class="slide"><!--slide-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img03.jpg" alt="">
+            </div><!--/box-->
+            <div class="box"><!--box-->
+              <img src="./img/top/blc06_img03.jpg" alt="">
+            </div><!--/box-->
+          </div><!--/slide-->
+        </div><!-- /boxSlide -->
+      </figure><!-- /inner -->
+    </section>
+  </div><!--/blc06-->
+
+  <div id="blc07"><!--blc07-->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <h1 class="ttlComm">ACCESS</h1>
+      <div class="intro">
+        全日11:00～22:00<br>
+        〒170-0013 東京都豊島区東池袋１丁目２­９
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3238.829064246059!2d139.71438251526018!3d35.730422230182945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1550224481229" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+  </div><!--/blc07-->
+
+  <div id="blc08"><!--blc08-->
+    <section class="contentsBlock contentsFloatingBox clearFix">
+      <h1 class="ttlComm">IKEMEN COLLECTION</h1>
+      <ul class="bnr">
+        <li><a href="./ikemen-idol/B2takes!" target=”_new”><img src="./img/top/blc08_img01.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/Rush×300" target=”_new”><img src="./img/top/blc08_img02.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/JustC-3" target=”_new”><img src="./img/top/blc08_img03.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/Backslash%5c%5c" target=”_new”><img src="./img/top/blc08_img04.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/AsteRisM⁂" target=”_new”><img src="./img/top/blc08_img05.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/アシスタントボーイズ（仮）" target=”_new”><img src="./img/top/blc08_img06.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/Prista☆" target=”_new”><img src="./img/top/blc08_img07.jpg" alt=""></a></li>
+        <li><a href="./ikemen-idol/CoLoN:" target=”_new”><img src="./img/top/blc08_img08.jpg" alt=""></a></li>
+      </ul>
+    </section>
+  </div><!--/blc08-->
+</div><!--/contents-->
+
+<footer id="footer">
+  <div class="contentsFloatingBox clearFix">
+    <div class="pagetop"><a href="#"><div class="btn"></div></a></div>
+    <div class="copyright">Copyright © IKEMEN BOX</div>
+  </div>
+</footer>
+</body>
+</html>

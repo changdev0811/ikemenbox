@@ -1,0 +1,28 @@
+import React, { Component } from 'react';
+import GroupList from '../components/GroupList';
+import MemberList from '../components/MemberList';
+import Button from '@material-ui/core/Button';
+
+class LiveGroup extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+    };
+  }
+
+  componentDidMount() {
+  }
+
+  render() {
+
+    return (
+        <div>
+          <GroupList/>
+        </div>
+    );
+
+  }
+}
+
+export default LiveGroup;
